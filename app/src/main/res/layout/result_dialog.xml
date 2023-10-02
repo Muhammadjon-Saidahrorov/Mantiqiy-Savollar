@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_flat"
+        android:backgroundTint="#225C6E"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Natija"
+                android:textColor="@color/white"
+                android:textSize="36dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:background="@drawable/ic_flat"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:text="O'tkazilganlar\nNoto'g'ri javoblar\nTo'g'ri javoblar">
+
+
+                <TextView
+                    android:id="@+id/wrongText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Noto'g'ri javoblar"
+                    android:textColor="#FFDA1111"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/skipText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="O'tkazilganlar"
+                    android:textColor="#F3BD1D"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/correctText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="To'g'ri javoblar"
+                    android:textColor="#56D114"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/menuButton"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_flat"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="menyuga qaytish"
+                android:textColor="#225C6E"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

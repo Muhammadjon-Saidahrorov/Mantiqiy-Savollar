@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#225C6E"
+    tools:context=".ui.EnterActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/Text"
+        android:src="@drawable/pngwing"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/text"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/playBtn"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:background="@drawable/ic_flat"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="O'yin"
+        android:textColor="#225C6E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/infoBtn"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_flat"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="malumot"
+        android:textColor="#225C6E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playBtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exitBtn"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_flat"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="chiqish"
+        android:textColor="#225C6E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infoBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
